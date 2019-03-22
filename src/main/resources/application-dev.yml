@@ -1,0 +1,20 @@
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://59.110.241.188:3306/niuhao_bolg?useUnicode=true&characterEncoding=utf8
+    username: niuhao
+    password: niuhao
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.lrm: debug
+  file: log/blog-dev.log
+
+
+
