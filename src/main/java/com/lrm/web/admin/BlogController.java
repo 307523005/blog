@@ -124,11 +124,11 @@ public class BlogController {
         EditormdUploadImageResModel res = new EditormdUploadImageResModel();
         res.setSuccess(0);
         ServletContext application = request.getSession().getServletContext();
-        String savePath = application.getRealPath("/") + "images22/";
+        String savePath = application.getRealPath("/") + "blog/";
         User user = (User) session.getAttribute("user");
         //String savePath ="d:/niuhao-images/"+user.getUsername()+"/images/";
         // 文件保存目录URL
-        String saveUrl = request.getContextPath() + "/images22/";
+        String saveUrl = request.getContextPath() + "/blog/";
         // 定义允许上传的文件扩展名
         HashMap<String, String> extMap = new HashMap<String, String>();
         String dirName = user.getUsername();
